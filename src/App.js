@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styled from "styled-components";
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Love from "./pages/Love";
+import Navbar from "./components/Navbar";
+import UserNav from "./components/UserNav";
 
-function App() {
+const AppDom = styled.div`
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+`;
+
+const Content = styled.div`
+  flex-basis: 50%;
+`;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppDom>
+      <Navbar />
+      <Content>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<UserNav />}>
+            <Route path=":nickname" element={<About />} />
+          </Route>
+          <Route path="/love" element={<Love />} />
+        </Routes>
+      </Content>
+    </AppDom>
   );
-}
+};
 
 export default App;
