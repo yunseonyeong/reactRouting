@@ -7,6 +7,8 @@ import About from "./pages/About";
 import Love from "./pages/Love";
 import Navbar from "./components/Navbar";
 import UserNav from "./components/UserNav";
+import UseEffectTest from "./UseEffectTest";
+import UseEffectInput from "./UseEffectInput";
 
 const AppDom = styled.div`
   height: 100vh;
@@ -23,7 +25,7 @@ const Content = styled.div`
 const App = () => {
   return (
     <AppDom>
-      <Navbar />
+      {/* <Navbar />
       <Content>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -32,7 +34,9 @@ const App = () => {
           </Route>
           <Route path="/love" element={<Love />} />
         </Routes>
-      </Content>
+      </Content> */}
+      {/* <UseEffectTest /> */}
+      <UseEffectInput />
     </AppDom>
   );
 };
