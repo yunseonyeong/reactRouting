@@ -31,6 +31,7 @@ const Navbar = () => {
       >
         Home
       </Button>
+
       <Button
         btnColor="orange"
         onClick={() => {

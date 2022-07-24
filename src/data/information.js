@@ -77,6 +77,13 @@ const data = {
       name: "조해윤",
       description: "멋사 10기 프론트 애기어흥",
     },
+    {
+      role: "신흥강자",
+      memId: 12,
+      nickname: "eoxhyn",
+      name: "김정현",
+      description: "멋사 10기 최고의 디자이너",
+    },
   ],
 };
 

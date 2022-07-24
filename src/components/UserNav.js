@@ -1,6 +1,6 @@
 import React from "react";
 import data from "../data/information";
-import { Outlet, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const UserNavDom = styled.div`
@@ -38,9 +38,6 @@ const UserNav = () => {
             </StyledLink>
           </span>
         ))}
-      </Menu>
-      <Menu>
-        <Outlet />
       </Menu>
     </UserNavDom>
   );
