@@ -9,6 +9,8 @@ import Navbar from "./components/Navbar";
 import UseEffectTest from "./UseEffectTest";
 import UseEffectInput from "./UseEffectInput";
 import Details from "./components/Details";
+import Javascript from "./Javascript";
+import Test from "./Test";
 
 const AppDom = styled.div`
   height: 100vh;
@@ -25,8 +27,9 @@ const Content = styled.div`
 const App = () => {
   return (
     <AppDom>
-      <Navbar />
-      <Content>
+      <Test />
+      {/* <Navbar /> */}
+      {/* <Content>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />}>
@@ -34,9 +37,10 @@ const App = () => {
           </Route>
           <Route path="/love" element={<Love />} />
         </Routes>
-      </Content>
-      {/* <UseEffectTest /> */}
+      </Content> */}
+      {/* /* <UseEffectTest /> */}
       {/* <UseEffectInput /> */}
+      {/* <Javascript /> */}
     </AppDom>
   );
 };
